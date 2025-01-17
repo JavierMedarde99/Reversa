@@ -36,7 +36,7 @@ input{
 
 input{
     border: 0px;
-    background-color: black;
+    background-color: transparent;
 }
 
 #imgMain{
@@ -63,3 +63,8 @@ input{
     color: #322203;
 }
 
+#indexMain{
+    background-image: url("../images/fondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
