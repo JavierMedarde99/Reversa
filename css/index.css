@@ -1,0 +1,65 @@
+header{
+    background-color: #EBEBEB;
+    position: fixed;
+    width: 100%;
+}
+
+main{
+    background-color: #EBEBEB;
+}
+
+h1,h2{
+    font-family: 'Hatton';
+}
+
+h2#h2Main{
+    font-size: 450%;
+}
+
+a{
+    color: #322203 !important;
+    font-family: 'TT Commons Pro Expanded';
+}
+
+label{
+    color: white;
+    font-family: 'TT Commons Pro Expanded';
+}
+
+input::placeholder{
+    color: white;
+}
+
+input{
+    color: white;
+}
+
+input{
+    border: 0px;
+    background-color: black;
+}
+
+#imgMain{
+    width: 700px;
+    height: 692px;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.divReversa{
+    width: 33%;
+}
+
+#imageReversa{
+    margin-top: 4%;
+}
+
+#textImagen{
+    position: absolute;
+    top: 6%;
+    left: 29%;
+    font-size: 500%;
+    font-family: 'Hatton';
+    color: #322203;
+}
+

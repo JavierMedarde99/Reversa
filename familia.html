@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<body>
+    <form action="" method="post">
+
+        <p>¿Has notado actitudes hostiles o agresivas del usuario hacia algún miembro de su familia? Por ejemplo:
+            insultos, gritos o amenazas.</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario1" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario1" id="no">
+        </div>
+
+        <p>¿El familiar ha mencionado, directa o indirectamente, sentirse intimidado o controlado por el usuario?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario2" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario2" id="no">
+        </div>
+
+        <p>¿Has observado episodios en los que el usuario haya tratado de golpear o empujar a un familiar?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario3" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario3" id="no">
+        </div>
+
+        <p>¿Has notado comportamientos frecuentes del usuario que impliquen humillación o desprecio hacia algún miembro
+            de su familia?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario4" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario4" id="no">
+        </div>
+
+        <p>¿El familiar ha mostrado signos de estrés, miedo o ansiedad al interactuar con el usuario?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario5" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario5" id="no">
+        </div>
+
+        <p>¿Has observado algún intento del usuario de limitar las decisiones o la autonomía del familiar (por ejemplo,
+            control de dinero, críticas constantes)?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario6" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario6" id="no">
+        </div>
+
+        <p>¿El familiar te ha comentado que recibe órdenes excesivas o demandas poco lógicas del usuario?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario7" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario7" id="no">
+        </div>
+
+        <p>¿Has notado signos de lesiones visibles en el familiar que puedan estar relacionadas con un acto de violencia
+            del usuario?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario8" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario8" id="no">
+        </div>
+
+        <p>¿El usuario parece mostrarse agresivo cuando se niegan a cumplir sus demandas?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario9" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario9" id="no">
+        </div>
+
+        <p>¿Has observado al familiar evitar al usuario o mostrarse reticente a interactuar con ella?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario10" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario10" id="no">
+        </div>
+
+        <p>¿El usuario ha intentado manipular a otros familiares o trabajadores del hogar para ejercer control sobre
+            alguien?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario11" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario11" id="no">
+        </div>
+
+        <p>¿El familiar ha mostrado cambios en su estado emocional (por ejemplo, tristeza, cansancio extremo) desde que
+            usted comenzó a cuidar del usuario?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario12" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario12" id="no">
+        </div>
+
+        <p>¿Has visto comportamientos de la persona mayor que implique tirar objetos, golpear muebles o amenazar con
+            hacerlo?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario13" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario13" id="no">
+        </div>
+
+        <p>¿El familiar ha comentado que tiene miedo de enfrentarse o contradecir a la persona mayor?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario14" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario14" id="no">
+        </div>
+
+        <p>¿El usuario se resiste de manera violenta o agresiva cuando los familiares intentan cuidarla o ayudarla?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario15" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario15" id="no">
+        </div>
+
+        <p id="response" style="color: green;" hidden>se ha enviado correctamente</p>
+
+        <div style="text-align: center;">
+            <button style=" text-align: center;" id="button">enviar</button>
+        </div>
+
+    </form>
+
+    <script>
+        const button = document.querySelector("#button");
+
+        button.addEventListener("click", comprobarUsuario, false);
+
+        function comprobarUsuario(event) {
+            event.preventDefault();
+            document.getElementById("response").hidden = false;
+        }
+    </script>
+</body>
+
+</html>

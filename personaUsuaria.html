@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<body>
+    <form action="" method="post">
+        <p>¿Has notado marcas, heridas u otros signos de lesiones en el usuario que no tengan una explicación lógica o
+            justificada?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario1" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario1" id="no">
+        </div>
+
+        <p>¿Has notado que el usuario muestre miedo o ansiedad de modo inusual hacia algún familiar?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario2" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario2" id="no">
+        </div>
+
+        <p>¿El usuario ha comentado o insinuado que alguien en su hogar ejerce algún tipo de control o restricción en el
+            acceso a dinero u otros medios esenciales?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario3" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario3" id="no">
+        </div>
+
+        <p>¿Has presenciado comportamiento o actitudes hostiles o agresivas de algún miembro de la familia hacia el
+            usuario?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario4" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario4" id="no">
+        </div>
+
+        <p>¿El usuario se siente incómodo o evita hablar al nombrar a un miembro de su familia específica?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario5" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario5" id="no">
+        </div>
+
+        <p>¿El usuario ha renunciado a realizar actividades o a interactuar con otras personas sin motivo aparente?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario6" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario6" id="no">
+        </div>
+
+        <p>¿Has notado señales de descuido en el cuidado del usuario (falta de higiene, ropa inadecuada, falta de
+            medicamentos, etc.)?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario7" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario7" id="no">
+        </div>
+
+        <p>¿El usuario parece padecer desnutrición o privado de alguna necesidad básicas (calefacción o agua)</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario8" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario8" id="no">
+        </div>
+
+        <p>¿Has observado que el usuario presenta dificultades para comunicarse contigo o con otras personas debido a la
+            intervención o vigilancia constante de un familiar?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario9" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario9" id="no">
+        </div>
+
+        <p>¿El usuario te ha solicitado que no compartas algunas observaciones que has recaudado?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario10" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario10" id="no">
+        </div>
+
+        <p>¿Algún miembro de la unidad familiar se ha mostrado exageradamente controlador o no permite que hables a
+            solas con el usuario?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario11" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario11" id="no">
+        </div>
+
+        <p>¿Has observado indicios de desgaste emocional en el usuario, como tristeza constante, irritabilidad o apatía?
+        </p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario12" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario12" id="no">
+        </div>
+
+        <p>¿Algún integrante de la unidad familiar ha hablado de manera despectiva o humillante hacia el usuario delante
+            de usted?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario13" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario13" id="no">
+        </div>
+
+        <p>¿El usuario ha hecho comentarios donde pueda sentirse inseguro o en peligro en su propia casa?</p>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="cuestionario14" id="si">
+            <label for="no">no</label>
+            <input type="radio" name="cuestionario14" id="no">
+        </div>
+
+        <p id="response" style="color: green;" hidden>se ha enviado correctamente</p>
+
+        <div style="text-align: center;">
+            <button style=" text-align: center;" id="button">enviar</button>
+        </div>
+    </form>
+
+    <script>
+        const button = document.querySelector("#button");
+
+        button.addEventListener("click", comprobarUsuario, false);
+
+        function comprobarUsuario(event) {
+            event.preventDefault();
+            document.getElementById("response").hidden = false;
+        }
+    </script>
+</body>
+
+</html>
