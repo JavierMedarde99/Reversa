@@ -118,4 +118,8 @@ input{
         width: 150px;
     }
 
+    header{
+        position: fixed;
+    }
+
 }
