@@ -11,27 +11,39 @@
 </head>
 
 <body class="min-vh-100">
-    <header >
-        <nav>
-            <ul class="navbar nav d-flex justify-content-evenly ">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">servicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">usuario</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">
-                        <h1>REVERSA</h1>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">sobre nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">contacto</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand d-none" href="#" id="onlyMobile">
+                <h1> REVERSA</h1>
+              </a>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav d-flex justify-content-evenly w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">usuario</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="#" id="onlyDescktop">
+                            <h1>REVERSA</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">contacto</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
         </nav>
     </header>
 

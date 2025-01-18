@@ -67,3 +67,35 @@ input{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+@media screen and (max-width: 575px) {
+
+    #onlyMobile{
+        display: block !important;
+    }
+
+    #onlyDescktop{
+        display: none !important;
+    }
+
+    h2#h2Main{
+        font-size: x-large;
+        margin-left: 2%;
+    }
+    #listaBienvenido{
+        margin-top: 10%;
+    }
+
+    #listaBienvenido > li > a{
+        font-size: medium;
+    }
+
+    #imgMain{
+        width: 500px;
+        height: 492px;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+
+}

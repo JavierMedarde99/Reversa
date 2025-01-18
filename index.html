@@ -12,39 +12,51 @@
 
 <body class="min-vh-100">
     <header>
-        <nav>
-            <ul class="navbar nav d-flex justify-content-evenly">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">servicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">usuario</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">
-                        <h1>REVERSA</h1>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">sobre nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-sm">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand d-none" href="#" id="onlyMobile">
+                <h1> REVERSA</h1>
+              </a>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav d-flex justify-content-evenly w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">usuario</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="#" id="onlyDescktop">
+                            <h1>REVERSA</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">contacto</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
         </nav>
     </header>
     <main class="d-flex justify-content-center align-self-center min-vh-100 " id="indexMain">
         <div class="d-flex flex-column justify-content-center align-self-center">
             <p class="text-danger" hidden id="error">Porfavor inserte el usuario o contraseña correcta</p>
-            <form action="" method="post" class="d-flex flex-column" >
+            <form action="" method="post" class="d-flex flex-column">
                 <div class="mb-3">
-                <label for="user">USUARIO/A:</label>
-                <input type="text" name="user" id="usuario" placeholder="inserte el usuario">
+                    <label for="user">USUARIO/A:</label>
+                    <input type="text" name="user" id="usuario" placeholder="inserte el usuario">
                 </div>
                 <div class="mb-4">
-                <label for="password">CONTRASEÑA:</label>
-                <input type="password" name="password" id="password" placeholder="inserte la contraseña">
+                    <label for="password">CONTRASEÑA:</label>
+                    <input type="password" name="password" id="password" placeholder="inserte la contraseña">
                 </div>
 
                 <button class="btn btn-light" id="button"> Entrar</button>
@@ -54,7 +66,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
