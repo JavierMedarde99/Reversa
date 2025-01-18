@@ -54,9 +54,9 @@ input{
 }
 
 #textImagen{
-    position: absolute;
-    top: 6%;
-    left: 29%;
+    position: relative;
+    width: 150%;
+    top: 90px;
     font-size: 500%;
     font-family: 'Hatton';
     color: #322203;
@@ -96,6 +96,26 @@ input{
         height: 492px;
         padding-left: 5%;
         padding-top: 5%;
+    }
+
+    #usuaria{
+        font-size: medium;
+    }
+
+    #familia{
+        font-size: medium;
+    }
+
+    #textImagen{
+        font-size: large;
+    }
+
+    #textImagen{
+        top: 20px;
+    }
+    
+    iframe{
+        width: 150px;
     }
 
 }
