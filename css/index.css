@@ -68,6 +68,51 @@ input{
     background-size: cover;
 }
 
+#observacionUl{
+    display: none;
+    opacity: 0;
+}
+
+#recomendacionesUl{
+    opacity: 0;
+    display: none;
+}
+
+#actitudesUl{
+    opacity: 0;
+    display: none;
+}
+
+#observacion:hover{
+    cursor: pointer;
+}
+
+#recomendaciones:hover{
+    cursor: pointer;
+}
+
+#actitudes:hover{
+    cursor: pointer;
+}
+
+#usuaria:hover{
+    cursor: pointer;
+}
+
+#familia:hover{
+    cursor: pointer;
+}
+
+#recomendacionesUl{
+    opacity: 0;
+    display: none;
+}
+
+#actitudesUl{
+    opacity: 0;
+    display: none;
+}
+
 
 @media screen and (max-width: 575px) {
 
@@ -120,6 +165,10 @@ input{
 
     header{
         position: fixed;
+    }
+
+    #mainOrientacion{
+        flex-direction: column !important;
     }
 
 }
